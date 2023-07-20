@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    
+    <div class="wrapper">
+    <form>
+    <h2>Kalkulator BMI</h2>
+
+    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+        <div class="tbu">
+        <label for="berat">Berat Badan (Kg)&nbsp&nbsp&nbsp</label>
+            <input type="numbers" id='berat'><br><br>
+
+        <label for="tinggi" id="tinggii">Tinggi Badan (Cm)</label>
+            <input type="numbers" id='tinggi'><br><br>
+
+        <label for="usia" id="usiaa">Usia (Tahun)</label>
+            <input type="numbers" id='usia'><br>
+        </div>
+        
+        <div class="gender">
+            <label class="container">
+                    <input type="radio" name="radio" id="m" value="Laki-Laki"><p class="text">Laki-Laki</p>
+                    <span class="checkmark"></span>
+            </label>
+
+            <label class="container">
+                    <input type="radio" name="radio" id="f" value="Perempuan"><p class="text">Perempuan</p>
+                    <span class="checkmark"></span>
+            </label>
+        </div>
+    </form>
+
+    <button onclick='hitungbmi()'id='button' type="submit">Hitung BMI</button><br>   
+    <button onclick='reload()' id='reset'>Reset</button>
+
+        <div class="result">
+            <p>BMI Kamu</p>
+            <div id='heading'>00.00</div>
+            <p id='usia-anda'></p>
+            <p id='jen-kel'></p>
+            <p id='pesan'></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

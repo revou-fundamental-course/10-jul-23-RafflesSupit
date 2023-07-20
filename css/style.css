@@ -1,0 +1,329 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(97,138,254,0.9);
+}
+h2{
+    text-align: center;
+}
+.wrapper{
+    position: absolute;
+    width: 85%;
+    height:135%;
+    top: 65%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.wrapper p{
+    text-align: center;
+}
+.tbu {
+    display: block;
+    width: 300px;
+    justify-content: space-around;
+    color:#ffffff; 
+    background: #4f7df9;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 37%;
+}
+.tbu input{
+    width: 50%;
+}
+.gender {
+    display: flex;
+    width: 316px;
+    justify-content: space-around;
+    background: #4f7df9;
+    color:#ffffff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 0px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 37%;
+}
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;  
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.gender .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+/* background waktu di pilih */
+.gender .container input:checked ~ .checkmark {
+    background-color: #686c70;
+  }
+  
+/* indicator hidden waktu ga di pilih */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+/* tampilin indikator waktu dipilih */
+  .gender .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+/* custom titik */
+.gender .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.result {
+    padding: 10px 10px;
+}
+.result p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 4px;
+}
+#usia-anda{
+    margin-bottom: -10px;
+}
+.result #heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #4f7df9;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 10px;
+    margin-left: 44.3%;
+}
+.result #pesan {
+    color: #000;
+    font-weight: 600;
+}
+input{
+    width: 15%;
+    border:none;
+    padding: 8px;
+    border-radius: 5px;
+    outline-color: #F1D501;
+    outline-style: inherit;
+    caret-color: #000000;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+form label{
+    display: block;
+    padding: 5px;
+}
+button {
+    padding:3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    color:#ffffff;
+    background-color: #4f7df9;
+    width:20%;
+}
+button:hover {
+    cursor: pointer;
+}
+.jen_kel{
+    margin-top: 15px;
+    width: 43%;
+}
+#usiaa{
+    margin-right: 47px;
+}
+#tinggii{
+    margin-right: 4px;
+}
+#heading, #pesan, #usia-anda{
+    margin-top: 10px;
+    padding: 0px;
+}
+#button{
+    margin-left: 40%;
+}
+#reset{
+    margin-left: 40%;
+}
+
+@media only screen and (max-width: 760px){
+    .wrapper{
+        position: absolute;
+        width: 85%;
+        height:135%;
+        top: 65%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    .tbu {
+        display: block;
+        width: 250px;
+        justify-content: space-around;
+        color:#ffffff; 
+        background: #4f7df9;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 27%;
+    }
+    .tbu input{
+        width: 90%;
+    }
+    .gender {
+        display: flex;
+        width: 276px;
+        justify-content: space-around;
+        background: #4f7df9;
+        color:#ffffff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        margin-left: 26.5%;
+    }
+    .result #heading {
+        font-size: 26px;
+        font-weight: 600;
+        color: #4f7df9;
+        background-color: #ffffff;
+        display: inline-block;
+        padding: 7px 20px;
+        border-radius: 55px;
+        margin-bottom: 0px;
+        margin-left: 40%;
+    }
+    .gender .container{
+        font-size: 18px;
+    }
+@media only screen and (max-width: 500px){
+        .wrapper{
+            position: absolute;
+            width: 75%;
+            height:135%;
+            top: 65%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .tbu {
+            display: block;
+            width: 250px;
+            justify-content: space-around;
+            color:#ffffff; 
+            background: #4f7df9;
+            box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 17%;
+        }
+        .tbu input{
+            width: 90%;
+        }
+        .gender {
+            display: flex;
+            width: 276px;
+            justify-content: space-around;
+            background: #4f7df9;
+            color:#ffffff;
+            box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            padding: 0px 0;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            margin-left: 16.5%;
+        }
+        .result #heading {
+            font-size: 26px;
+            font-weight: 600;
+            color: #4f7df9;
+            background-color: #ffffff;
+            display: inline-block;
+            padding: 7px 20px;
+            border-radius: 55px;
+            margin-bottom: 0px;
+            margin-left: 35%;
+        }
+        .gender .container{
+            font-size: 12px;
+        }
+        #button{
+            text-align: center;
+            font-size: 13px;
+            width: 30%;
+            margin-left: 36%;
+        }
+        #reset{
+            text-align: center;
+            font-size: 13px;
+            width: 30%;
+            margin-left: 36%;
+        }
+    }
+
+}
